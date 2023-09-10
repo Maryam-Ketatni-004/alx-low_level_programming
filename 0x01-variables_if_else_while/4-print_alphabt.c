@@ -1,20 +1,22 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-
 /**
- * main - Entry point
+ * main - Entry Point Of THe Programme.
+ *
+ * Description: Prints alphabets in lowercase, except the letter "q"
+ * and "e"
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char str;
+	int i;
 
-	for (str = 'a'; str <= 'z'; str++)
+	for (i = 97; i < 123; i++)
 	{
-		if (str != 'e' && str != 'q')
-			putchar(str);
+		if (i != 101 && i != 113)
+		{
+			putchar(i);
+		}
 	}
 	putchar('\n');
 	return (0);
